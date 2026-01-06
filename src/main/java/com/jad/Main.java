@@ -12,23 +12,23 @@ public final class Main {
         final ISpectator jad = new Spectator("Jean-Aymeric", "Diet");
 
         final List<IShow> shows = new ArrayList<>();
-        shows.add(new MovieShow("Kamen Riders",
+        shows.add(ShowFactory.MakeMovieShow("Kamen Riders",
                 "Les Kamen Riders, conducteurs de moto au pouvoir des étoiles, défendent la ville contre les attaques des Narghuls.",
                 "Mahimoto Yosuke",
                 "2023",
                 MovieType.SCIENCE_FICTION));
-        shows.add(new TheaterShow("Secrets souterrains",
+        shows.add(ShowFactory.MakeTheaterShow("Secrets souterrains",
                 "Le clan des Lawrence cherche à reprendre son pouvoir et sa gloire passé à Mondstadt, mais Eula, une de ses membres s'y oppose.",
                 "Jean de Favonius",
                 "Eula Lawrence",
                 "Harmand Lawrence",
                 "Venti Dandelion"));
-        shows.add(new StreetShow("La mascarade des tissus",
+        shows.add(ShowFactory.MakeStreetShow("La mascarade des tissus",
                 "Dans la grande ville aux batiments en pierre et en bois recouverts de tissus somptueux, une mascarade se prépare à l'abri des yeaux vigilants des gardiens",
                 "Klee",
                 "Nahida",
                 "Diona"));
-        shows.add(new ConcertShow("Under the sun",
+        shows.add(ShowFactory.MakeConcertShow("Under the sun",
                 "Concert reprenant les meilleurs hits de Boris et Uamee",
                 "Boris et Uamee"));
 

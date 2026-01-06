@@ -37,7 +37,8 @@ public class Spectator implements ISpectator {
     public void watch(ConcertShow concertShow) {
         String message = MessageFormat.format("""
             J''ai vu le concert {0} de {1}
-            """, concertShow.getName(), concertShow.getArtist());
+            """,
+            concertShow.getName(), concertShow.getArtist());
         System.out.println(message);
     }
 
@@ -45,7 +46,8 @@ public class Spectator implements ISpectator {
     public void watch(MovieShow movieShow) {
         String message = MessageFormat.format("""
             J''ai vu le film {0} de {1} sorti en {2}
-            """, movieShow.getName(), movieShow.getDirector(), movieShow.getYearOfRelease());
+            """, 
+            movieShow.getName(), movieShow.getDirector(), movieShow.getYearOfRelease());
         System.out.println(message);
     }
 
@@ -55,7 +57,8 @@ public class Spectator implements ISpectator {
         String message = MessageFormat.format("""
             J''ai assisté au spectacle de rue {0} avec les artistes :
             {1}
-            """, streetShow.getName(), performers);
+            """,
+            streetShow.getName(), performers);
         System.out.println(message);
     }
 
@@ -65,7 +68,8 @@ public class Spectator implements ISpectator {
         String message = MessageFormat.format("""
             J''ai assisté à la pièce de théatre {0} de {1} avec les artistes :
             {2}
-            """, theaterShow.getName(), theaterShow.getDirector(), actors);
+            """, 
+            theaterShow.getName(), theaterShow.getDirector(), actors);
         System.out.println(message);
     }
 }
