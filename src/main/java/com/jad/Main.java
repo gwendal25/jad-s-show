@@ -12,26 +12,27 @@ public final class Main {
         final ISpectator jad = new Spectator("Jean-Aymeric", "Diet");
 
         final List<IShow> shows = new ArrayList<>();
-        shows.add(new MovieShow("Titre du film",
-                "Description du film",
-                "Nom du réalisateur",
+        shows.add(new MovieShow("Kamen Riders",
+                "Les Kamen Riders, conducteurs de moto au pouvoir des étoiles, défendent la ville contre les attaques des Narghuls.",
+                "Mahimoto Yosuke",
                 "2023",
                 MovieType.SCIENCE_FICTION));
-        shows.add(new TheaterShow("Titre du spectacle de théâtre",
-                "Description du spectacle de théâtre",
-                "Nom du metteur en scène",
-                "Nom de l'acteur 1",
-                "Nom de l'acteur 2",
-                "Nom de l'acteur 3"));
-        shows.add(new StreetShow("Titre du spectacle de rue",
-                "Description du spectacle de rue",
-                "Nom de l'artiste 1",
-                "Nom de l'artiste 2",
-                "Nom de l'artiste 3"));
-        shows.add(new ConcertShow("Titre du concert",
-                "Description du concert",
-                "Nom de l'artiste ou du groupe"));
+        shows.add(new TheaterShow("Secrets souterrains",
+                "Le clan des Lawrence cherche à reprendre son pouvoir et sa gloire passé à Mondstadt, mais Eula, une de ses membres s'y oppose.",
+                "Jean de Favonius",
+                "Eula Lawrence",
+                "Harmand Lawrence",
+                "Venti Dandelion"));
+        shows.add(new StreetShow("La mascarade des tissus",
+                "Dans la grande ville aux batiments en pierre et en bois recouverts de tissus somptueux, une mascarade se prépare à l'abri des yeaux vigilants des gardiens",
+                "Klee",
+                "Nahida",
+                "Diona"));
+        shows.add(new ConcertShow("Under the sun",
+                "Concert reprenant les meilleurs hits de Boris et Uamee",
+                "Boris et Uamee"));
 
+        System.out.println("");
         for (final IShow show : shows) {
             jad.watch(show);
         }

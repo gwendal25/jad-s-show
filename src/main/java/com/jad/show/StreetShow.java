@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+import com.jad.customer.ISpectator;
+
 public class StreetShow extends Show {
     private final ArrayList<String> performers = new ArrayList<>();
 
@@ -15,5 +17,10 @@ public class StreetShow extends Show {
 
     public List<String> getPerformers() {
         return Collections.unmodifiableList(this.performers);
+    }
+
+    @Override
+    public void watch(ISpectator spectator) {
+        spectator.watch(this);
     }
 }
