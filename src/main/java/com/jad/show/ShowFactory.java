@@ -16,4 +16,8 @@ public abstract class ShowFactory {
     public static TheaterShow MakeTheaterShow(final String name, final String description, final String director, final String... actors) {
         return new TheaterShow(name, description, director, actors);
     }
+
+    public static IShow MakeShow(final String showDescription) {
+        return CreateShowHandlerChain.getInstance().handle(showDescription);
+    }
 }
